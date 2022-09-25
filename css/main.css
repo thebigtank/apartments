@@ -1,0 +1,139 @@
+.block {
+  font-family: "Poppins", sans-serif;
+}
+.block .wrapper {
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+}
+
+.menu-active {
+  overflow: hidden;
+}
+
+.block.header .row {
+  padding: 0 40px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.block.header .col {
+  position: relative;
+  z-index: 99;
+  padding: 20px 0;
+}
+.block.header .logo {
+  display: flex;
+  align-items: center;
+}
+.block.header .logo a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: #1B1212;
+  font-size: 20px;
+  font-weight: 700;
+}
+.block.header .logo a span {
+  text-transform: uppercase;
+  font-size: 12px;
+  position: relative;
+  top: -6px;
+}
+.block.header .menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transform: translateX(0px);
+  transition: 250ms;
+}
+.block.header .menu .main {
+  display: flex;
+  gap: 55px;
+}
+.block.header .menu .main li a {
+  display: block;
+  color: #959595;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  transition: color 250ms ease-in-out;
+}
+.block.header .menu .main li a:hover {
+  color: #1B1212;
+}
+@media screen and (max-width: 1020px) {
+  .block.header .menu .main li a {
+    color: #fff;
+    font-size: 26px;
+    font-weight: 700;
+  }
+  .block.header .menu .main li a:hover {
+    color: #959595;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .block.header .menu .main {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1020px) {
+  .block.header .menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #1B1212;
+    align-items: start;
+    transform: translateX(-2000px);
+    padding: 60px 40px;
+    padding-top: 125px;
+    box-sizing: border-box;
+  }
+}
+.block.header .icons {
+  display: flex;
+}
+.block.header .icons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.block.header .icons button svg {
+  height: 22px;
+}
+.block.header .icons button.hamburger {
+  display: none;
+  height: 35px;
+  width: 35px;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1020px) {
+  .block.header .icons button.hamburger {
+    display: block;
+  }
+}
+.block.header .icons button.hamburger span {
+  display: block;
+}
+.block.header .icons button.hamburger .close {
+  display: none;
+}
+.block.header.active .logo a {
+  color: #fff;
+}
+.block.header.active .menu {
+  transform: translateX(0px);
+}
+.block.header.active .icons button svg {
+  color: #fff;
+}
+.block.header.active .icons .hamburger .close {
+  display: block;
+}
+.block.header.active .icons .hamburger .open {
+  display: none;
+}/*# sourceMappingURL=main.css.map */
