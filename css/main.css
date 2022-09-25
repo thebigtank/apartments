@@ -29,7 +29,7 @@
 .block.header .logo a {
   text-decoration: none;
   text-transform: capitalize;
-  color: #1B1212;
+  color: #28282B;
   font-size: 20px;
   font-weight: 700;
   transition: 250ms;
@@ -62,7 +62,7 @@
   transition: color 250ms ease-in-out;
 }
 .block.header .menu .main li a:hover {
-  color: #1B1212;
+  color: #28282B;
 }
 @media screen and (max-width: 1020px) {
   .block.header .menu .main li a {
@@ -86,7 +86,8 @@
     left: 0;
     z-index: 1;
     width: 100%;
-    background-color: #1B1212;
+    height: 100vh;
+    background-color: #28282B;
     align-items: start;
     transform: translateX(-2000px);
     padding: 60px 40px;
