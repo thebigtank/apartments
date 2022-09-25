@@ -32,6 +32,7 @@
   color: #1B1212;
   font-size: 20px;
   font-weight: 700;
+  transition: 250ms;
 }
 .block.header .logo a span {
   text-transform: uppercase;
