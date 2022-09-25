@@ -12,7 +12,7 @@
 }
 
 .block.header .row {
-  padding: 0 40px;
+  padding: 0 20px;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -20,7 +20,7 @@
 .block.header .col {
   position: relative;
   z-index: 99;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 .block.header .logo {
   display: flex;
@@ -54,10 +54,10 @@
 }
 .block.header .menu .main li a {
   display: block;
-  color: #959595;
+  color: #697384;
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
+  text-transform: capitalize;
+  font-size: 13px;
   font-weight: 600;
   transition: color 250ms ease-in-out;
 }
@@ -71,7 +71,7 @@
     font-weight: 700;
   }
   .block.header .menu .main li a:hover {
-    color: #959595;
+    color: #28282B;
   }
 }
 @media screen and (max-width: 1020px) {
@@ -87,10 +87,10 @@
     z-index: 1;
     width: 100%;
     height: 100vh;
-    background-color: #28282B;
+    background-color: #03060b;
     align-items: start;
     transform: translateX(-2000px);
-    padding: 60px 40px;
+    padding: 60px 20px;
     padding-top: 125px;
     box-sizing: border-box;
   }
@@ -112,6 +112,7 @@
   width: 35px;
   align-items: center;
   justify-content: center;
+  margin-left: 8px;
 }
 @media screen and (max-width: 1020px) {
   .block.header .icons button.hamburger {
